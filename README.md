@@ -29,7 +29,7 @@ $sudo docker run -dti --name dashboard -p 8081:8081 openfalcon-dashboard
 
   Replace file **falcon-dashboard.tar.gz** in the volume */package*.
   
-  For example, **cfg.json** in /tmp/config and **falcon-dashboard.tar.gz** in /tmp/pack,
+  For example, **config.py** in /tmp/config and **falcon-dashboard.tar.gz** in /tmp/pack,
 
 ```
 $sudo docker run -dti --name dashboard -v /tmp/pack:/package -v /tmp/config/config.py:/config/config.py -p 8081:8081 openfalcon-dashboard
