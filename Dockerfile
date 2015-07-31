@@ -11,7 +11,7 @@ VOLUME $CONFIGDIR $WORKDIR $PACKDIR
 RUN \
   apt-get update && \
   apt-get install -y python-virtualenv python-dev python-mysqldb
-COPY $CONFIGFILE gunicorn.conf $CONFIGDIR/
+COPY $CONFIGFILE $CONFIGDIR/
 COPY $PACKFILE $PACKDIR/
 
 WORKDIR /root
