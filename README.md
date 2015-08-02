@@ -22,14 +22,14 @@ $sudo docker run -dti --name dashboard -p 8081:8081 openfalcon-dashboard
 
 + Self-defined configuration
 
-  Replace file **config.py** in the volume */config*.  
-  For more detail about **config.py**, see [Dashboard](http://book.open-falcon.com/zh/install/dashboard.html).
+    Replace file **config.py** in the volume */config*.  
+    For more detail about **config.py**, see [Dashboard](http://book.open-falcon.com/zh/install/dashboard.html).
 
 + New falcon-dashboard package
 
-  Replace file **falcon-dashboard.tar.gz** in the volume */package*.
+    Replace file **falcon-dashboard.tar.gz** in the volume */package*.
   
-  For example, **config.py** in /tmp/config and **falcon-dashboard.tar.gz** in /tmp/pack,
+For example, **config.py** in /tmp/config and **falcon-dashboard.tar.gz** in /tmp/pack,
 
 ```
 $sudo docker run -dti --name dashboard -v /tmp/pack:/package -v /tmp/config/config.py:/config/config.py -p 8081:8081 openfalcon-dashboard
